@@ -1,0 +1,234 @@
+/* GENERAL CONFIG */
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+.container {
+    max-width: 80%;
+}
+
+body {
+    font-family: 'DM Sans', sans-serif;
+}
+
+p {
+    line-height: 1.5;
+    font-size: 1.58rem;
+}
+
+h5 {
+    font-size: 2rem;
+}
+
+/* CLASS */
+
+/* NAV */
+
+.title{
+    font-family: 'Lobster', cursive;
+    font-size: 2.5rem;
+}
+
+.nav-link {
+    font-size: 1.2rem;
+}
+
+/* HEADER */
+
+.first-line {
+    display: none;
+}
+
+.header{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 3rem;
+}
+
+.header-image {
+    max-width: 100%;
+}
+
+.header-text {
+    display: inline-block;
+    max-width: 65%;
+    font-size: 3.4rem;
+    font-weight: bold;
+    line-height: 1;
+    padding-top: 5rem;
+}
+
+.header-subtext {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+/* CAROUSEL */
+
+.carousel-indicators button {
+    background-color: grey !important;
+    width: 10px !important;
+    height: 10px !important;
+    border-radius: 50%;
+}
+
+.carousel-image img {
+    max-width: 22rem;
+    border-radius: 1%;
+    padding-right: 2rem;
+    object-fit: cover;
+}
+
+/* MAIN CONTENT */
+
+.main-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 3rem;
+}
+
+/* CARDS */
+
+.card {
+    min-height: 30.5rem;
+}
+
+.card-text {
+    font-size: 1.2rem;
+}
+
+/* SUBSCRIBE SECTION */
+
+.pre-footer{
+    margin-top: 4rem;
+}
+
+.subscribe {
+    padding-top: 8rem;
+    line-height: 0.6;
+}
+
+.subscribe-text {
+    font-size: 2rem;
+}
+
+.button {
+    padding-top: 3rem;
+    padding-bottom: 10rem;
+}
+
+/* FOOTER */
+
+.footer {
+    height: 6rem;
+}
+
+.footer p {
+    padding-top: 1rem;
+}
+
+/* MEDIA QUERIES */
+
+@media screen and (max-width: 1400px){
+    .carousel-image img {
+        max-width: 18rem;
+        border-radius: 1%;
+        padding-right: 2rem;
+        object-fit: cover;
+    }
+}
+
+@media screen and (max-width: 1204px){
+
+    .header-text {
+        display: inline-block;
+        max-width: 65%;
+        font-size: 2.5rem;
+        font-weight: bold;
+        line-height: 1;
+    }
+
+    .carousel-image img {
+        max-width: 16rem;
+        border-radius: 1%;
+        padding-right: 2rem;
+        object-fit: cover;
+    }
+
+    .card {
+        min-height: 32rem;
+    }  
+}
+
+@media screen and (max-width: 990px){
+
+    .first-line {
+        display: block;
+    }
+
+    .header{
+        display: block;
+        grid-template-columns: 1fr 1fr;
+        column-gap: 3rem;
+        text-align: center;
+    }
+
+    .header-text {
+        display: inline-block;
+        max-width: 100%;
+        font-size: 3rem;
+        font-weight: bold;
+        line-height: 1;
+        padding-top: 5rem;
+    }
+
+    .header-subtext {
+        font-size: 1.5rem;
+        font-weight: bold;
+    }
+
+    .carousel-image img {
+        max-width: 13rem;
+        border-radius: 1%;
+        padding-right: 2rem;
+        object-fit: cover;
+    }
+
+    .card {
+        min-height: 40rem;
+    }    
+}
+
+@media screen and (max-width: 767px){
+
+    .carousel-container {
+        display: none;
+    }
+
+    .main-content {
+        display: block;
+    }
+
+    .intructions p {
+        line-height: 2;
+    }
+
+    .button button{
+        padding-right: 5rem;
+        padding-left: 5rem;
+    }
+    
+}
+
+@media screen and (max-width: 718px) {
+    .subscribe {
+        line-height: 1.2;
+        font-size: 3rem;
+    }
+
+    .button button{
+        width: 100%;
+    }
+    
+}
